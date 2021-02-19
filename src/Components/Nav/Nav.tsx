@@ -5,8 +5,7 @@ const Movie: React.FC = () => {
 
   return (
     <Container>
-      <h2>Nav</h2>
-      <p>List of movies</p>
+      <h1>List of movies</h1>
     </Container>
   )
 }

@@ -1,16 +1,15 @@
 import React, { useState, createContext } from 'react';
-
 interface MovieProps {
   id: number;
   name: string;
   price: string;
 }
 
-export const MovieContext = createContext({} as MovieProps);
 
-export const MovieProvider: React.FC<MovieProps> = ({children}) => {
+export const MovieContext = createContext<MovieProps[]>([] as MovieProps[]);
 
-  const [ movies, setMovies ] = useState([
+export const MovieProvider: React.FC = ({ children }) => {
+  const [ movies, setMovies  ] = useState<MovieProps[]>([
     {
       id: 123,
       name: 'Harry Potter',
@@ -25,12 +24,12 @@ export const MovieProvider: React.FC<MovieProps> = ({children}) => {
       id: 321,
       name: 'Interestelar',
       price: '6$',
-    }
+    },
+
   ])
 
-  console.log(setMovies);
     return (
-        <MovieContext.Provider value={[movies]}>
+        <MovieContext.Provider value={movies}>
           {children}
         </MovieContext.Provider>
     )

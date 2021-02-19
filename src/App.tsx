@@ -9,8 +9,8 @@ function App() {
     <>
     <MovieProvider>
       <GlobalStyles />
-      <Nav />
-      <MovieList />
+        <Nav />
+        <MovieList />
     </MovieProvider>
     </>
   );
