@@ -1,11 +1,15 @@
 import React from 'react';
-import MovieList from './Movie';
+import MovieList from './Components/Movies/MovieList';
+import Nav from './Components/Nav/Nav';
+import GlobalStyles from './styles/global'
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <GlobalStyles />
+      <Nav />
       <MovieList />
-    </div>
+    </>
   );
 }
 
