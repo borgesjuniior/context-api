@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  display: table;
   font-family: sans-serif;
   height: 20rem;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -13,8 +13,15 @@ export const Container = styled.div`
   background: white;
 
   li {
-    display: inline-block;
-    padding: 4%;
+    list-style: none;
+    padding: 2%;
+    vertical-align:bottom;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
   }
 
 `;
