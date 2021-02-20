@@ -21,8 +21,8 @@ export const AddMovie: React.FC = () => {
 
   return (
     <form onSubmit={addMovie}>
-      <input type="text" name="name" value={name} onChange={updateName} />
-      <input type="text" name="price" value={price} onChange={updatePrice}/>
+      <input type="text" name="name" value={name} onChange={updateName} placeholder="Nome" />
+      <input type="text" name="price" value={price} onChange={updatePrice} placeholder="$Preço" />
       <button>Adicionar</button>
     </form>
   )

@@ -6,9 +6,11 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+    font-family: 'Raleway', sans-serif;
   }
   body {
     -webkit-font-smoothing: antialiased;
     background: grey;
+
   }
 `;
